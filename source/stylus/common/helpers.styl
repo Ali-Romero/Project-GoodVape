@@ -1,17 +1,42 @@
 .wrapper
-  max-width: 320px
+  max-width: 300px
   margin: 0 auto
-  padding-right: 10px
-  padding-left: 10px
+  width 100%
   +above($breakpoints.sm)
-    max-width: 1184px
-    margin: 0 auto
-    padding-right: 20px
-    padding-left: 20px
+    max-width: 760px
+  +above($breakpoints.lg)
+    max-width: 1160px
 
+h1,
+.title
+  font-size: 18px
+  line-height: 25px
+  text-align: center
+  text-transform: uppercase;
+  +above($breakpoints.sm)
+    font-size: 24px
+    line-height: 30px
+    text-align: left
+  +above($breakpoints.lg)
+    font-size: 37px;
+    line-height: 47px;
+    color: #FFFFFF;
+  &__color
+    color: #6D4EE7
+h2
+  font-size: 20px
+  line-height: 28px
+  text-align: center
 
-.text-red
-  color: $color-red
+  +above($breakpoints.sm)
+    font-size: 28px
+    line-height: 38px
+  +above($breakpoints.md)
+    font-size: 35px
+    line-height: 42px
+  +above($breakpoints.lg)
+    font-size: 48px
+    line-height: 54px
 
 .d-flex
   display: flex
@@ -21,26 +46,3 @@
 
 .d-i-block
   display: inline-block
-
-.mr-8
-  margin-right 8px
-
-.mr-20
-  margin-right 20px
-
-.mb-5
-  margin-bottom 5px
-
-.pl-20
-  padding-left: 20px
-
-
-.red-link
-  color: $color-red
-  &:hover
-    color: $color-red
-
-.black-link
-  color: $color-black
-  &:hover
-    color: $color-black

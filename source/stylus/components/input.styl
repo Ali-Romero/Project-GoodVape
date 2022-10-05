@@ -1,0 +1,66 @@
+.input
+  display: flex
+  align-items: center
+  background: #EFEFEF;
+  border: 1px solid #D0D0D0;
+  border-radius: 10px;
+  padding: 0 16px 0 14px
+  height: 100%
+  +above($breakpoints.sm)
+    padding-left: 7px
+    padding: 0 5px
+  +above($breakpoints.lg)
+    padding-left: 14px
+    padding: 0 12px 0 15px
+
+  &__icon
+    margin-right: 12px
+    +above($breakpoints.sm)
+      margin-right: 4px
+    +above($breakpoints.lg)
+      margin-right: 10px
+
+  &__field
+    width: 100%
+    font-size: 13px
+    line-height: 16px
+    padding: 0
+    border: none
+    display: block
+    outline: none
+    color: $color-black
+    transition: all 0.3s
+    height: 100%
+    background: none
+    font-family: "Geometria-Light"
+    +above($breakpoints.sm)
+      font-size: 12px
+      line-height: 16px
+    +above($breakpoints.lg)
+      font-size: 15px;
+      line-height: 24px;
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active
+      -webkit-box-shadow: 0 0 0px 1000px white inset
+      transition: all 5000s ease-in-out 0s
+  
+    &::placeholder
+      color: #B7B7B7
+      font-style: italic
+    &:-ms-input-placeholder
+      color: #B7B7B7
+      font-style: italic
+    &::-ms-input-placeholder
+      color: #B7B7B7
+      font-style: italic
+    &.error
+      color: $color-error
+      font-style: italic
+      &::placeholder
+        color: $color-error
+      &:-ms-input-placeholder
+        color: $color-error
+      &::-ms-input-placeholder
+        color: $color-error

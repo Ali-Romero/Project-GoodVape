@@ -1,0 +1,56 @@
+.btn
+  position: relative
+  width 100%
+  height: 100%
+  button,
+  a
+    display: flex;
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+    position: relative
+    top: 0
+    color: $color-white
+    border: none
+    font-family: "Geometria-Bold"
+    cursor: pointer
+    background: linear-gradient(180deg, #FF4747 0%, #B94141 100%);
+    box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.42);
+    border-radius: 55px;
+    overflow: hidden
+
+    span
+      display: block
+      font-weight: 450;
+      font-size: 13px
+      line-height: 15px;
+      text-align: center
+      color: #FFFFFF;
+      +above($breakpoints.lg)
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.179478px;
+
+
+    &::before
+      content: ""
+      position: absolute
+      top: 0;
+      height: 100%;
+      width: 45px;
+      transform: skewX(-45deg)
+      left: -150%
+      pointer-events: none
+      background: linear-gradient(90deg, RGBA(255,255,255,0.12), RGBA(255,255,255,0.87))
+      animation: flareAnimation 4s infinite ease-in
+      vendord = official
+      @keyframes flareAnimation {
+        0% {
+            left: -700%;
+        }
+        100% {
+            left: 700%;
+        }
+      }

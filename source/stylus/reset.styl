@@ -12,42 +12,14 @@ html
 body
   margin: 0
   font-family: $base-font-family
-
+section
+  overflow: hidden
 h1,
 h2,
 h3
-  font-family: $base-font-family
   padding: 0
   margin: 0
-
-h1
-  font-size: 21px
-  line-height: 29px
-  text-align: center
-
-  +above($breakpoints.sm)
-    font-size: 30px
-    line-height: 45px
-  +above($breakpoints.lg)
-    text-align: start
-    font-size: 48px
-    line-height: 54px
-
-h2
-  font-family: $base-font-family
-  font-size: 20px
-  line-height: 28px
-  text-align: center
-
-  +above($breakpoints.sm)
-    font-size: 28px
-    line-height: 38px
-  +above($breakpoints.md)
-    font-size: 35px
-    line-height: 42px
-  +above($breakpoints.lg)
-    font-size: 48px
-    line-height: 54px
+  font-family: "Geometria-Bold"
 
 ul,
 ol,
@@ -60,6 +32,7 @@ a
   -webkit-tap-highlight-color: transparent
   text-decoration: none
   outline: none
+  color: inherit
 
 strong
   font-family: $base-font-family

@@ -6,7 +6,9 @@
       form(data-feedback-form).feedback-mini__form.feedback-mini__form--main
         .feedback-mini__form-container
           .feedback-mini__title
-            |Получите бизнес-план и готовые пошаговые инструкции
+            |Получите подробную презентацию 
+            br
+            |о партнёрстве с Marco Bonne`
           .feedback-mini__container
             .feedback-mini__input
               .input
@@ -17,18 +19,19 @@
               .input
                 .input__icon
                   +icon(name="input-email").d-block
-                input(type="email" name="email" placeholder="bestpartner@escoshop.ru").input__field
+                input(type="email" name="email" placeholder="bestpartner@marcobonne.ru").input__field
             .feedback-mini__input
               .input
                 .input__icon
                   +icon(name="input-user").d-block
-                input(type="text" name="name" placeholder="Корноухов Дмитрий").input__field
+                input(type="text" name="name" placeholder="Вадим Лейбин").input__field
             .feedback-mini__btn
-              button.btn
-                span Скачать материалы
+              .btn
+                button(type="submit")
+                  span Получить бизнес-план
             input(type="text" name="section-name" value="Закрытая" hidden)
-            input(type="text" name="section-name-text" value="Получите бизнес-план и готовые пошаговые инструкции" hidden)
-            input(type="text" name="section-btn-text" value="Скачать материалы" hidden)
+            input(type="text" name="section-name-text" value="Получите подробную презентацию о партнёрстве с Marco Bonne`" hidden)
+            input(type="text" name="section-btn-text" value="Получить бизнес-план" hidden)
           .feedback-mini__agree
             .feedback-mini__agree-checkbox
               input(name="checkbox" type="checkbox" checked="checked" disabled)

@@ -6,13 +6,7 @@
       form(data-feedback-form).feedback-mini__form.feedback-mini__form--call
         .feedback-mini__form-container
           .feedback-mini__title
-            |Запишитесь на 
-            br
-            |онлайн-консультацию
-            div
-              |чтобы узнать подробнее
-              br
-              |о франшизе ESCOSHOP
+            |Запишитесь на онлайн-консультацию, чтобы узнать подробнее о сотрудничестве с Marco Bonne`
           .feedback-mini__container
             .feedback-mini__input
               .input
@@ -23,18 +17,19 @@
               .input
                 .input__icon
                   +icon(name="input-email").d-block
-                input(type="email" name="email" placeholder="bestpartner@escoshop.ru").input__field
+                input(type="email" name="email" placeholder="bestpartner@marcobonne.ru").input__field
             .feedback-mini__input
               .input
                 .input__icon
                   +icon(name="input-user").d-block
-                input(type="text" name="name" placeholder="Корноухов Дмитрий").input__field
+                input(type="text" name="name" placeholder="Вадим Лейбин").input__field
             .feedback-mini__btn
-              button.btn
-                span Узнать подробности
+              .btn
+                button(type="submit")
+                  span Записаться на консультацию
             input(type="text" name="section-name" value="Закрытая" hidden)
-            input(type="text" name="section-name-text" value="Запишитесь на онлайн-консультацию, чтобы узнать подробнее о франшизе ESCOSHOP" hidden)
-            input(type="text" name="section-btn-text" value="Узнать подробности" hidden)
+            input(type="text" name="section-name-text" value="Запишитесь на онлайн-консультацию, чтобы узнать подробнее о сотрудничестве с Marco Bonne`" hidden)
+            input(type="text" name="section-btn-text" value="Записаться на консультацию" hidden)
           .feedback-mini__agree
             .feedback-mini__agree-checkbox
               input(name="checkbox" type="checkbox" checked="checked" disabled)

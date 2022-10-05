@@ -11,26 +11,51 @@
       padding: 45px 0
 
   &__logo
+    display: flex
+    align-items: center
     svg
-      width: 122px
-      height: 21px
+      width: 107px
+      height: 37px
       +above($breakpoints.sm)
-        width: 142px
-        height: 25px
+        width: 112px
+        height: 39px
+        margin-right: 10px
       +above($breakpoints.lg)
-        width: 241px
-        height: 41px
+        width: 124px
+        height: 43px
+        margin-right: 20px
 
   &__description
     display: none
     +above($breakpoints.sm)
+      position relative
       display: block
-      max-width: 364px
+      max-width: 334px
       width 100%
-      text-align: center
+      text-align: left
       font-size: 12px;
       line-height: 16px
+      padding-left: 16px
+      font-family: "Geometria-Medium"
+      color: rgba(255, 255, 255, 0.73);
     +above($breakpoints.lg)
-      font-size: 14px;
-      line-height: 21px
-      max-width: 496px
+      max-width: 364px
+      padding-left: 28px
+      font-size: 15px;
+      line-height: 19px;
+      max-width: 422px
+    &:before
+      +above($breakpoints.sm)
+        content: ""
+        position: absolute
+        top: 2px
+        bottom: 2px
+        width: 2.19089px
+        background-color: rgba(255, 255, 255, 0.22);
+        border-radius: 10px
+        left: 0
+        margin: auto 0
+    span
+      color: white
+      font-family: "Geometria-Bold"
+

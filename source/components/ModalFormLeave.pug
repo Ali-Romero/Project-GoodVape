@@ -7,7 +7,7 @@
         .feedback-mini__form-container
           .feedback-mini__title
             |Уже уходите?
-            span Не упустите свой шанс присоединиться к розничному магазину по продаже аппаратов для парения. Получите бесплатную презентацию на почту
+            span Не упускайте шанс присоединиться к партнёрской сети Marco Bonne`. Получите бесплатную презентацию на почту
           .feedback-mini__container
             .feedback-mini__input
               .input
@@ -18,18 +18,19 @@
               .input
                 .input__icon
                   +icon(name="input-email").d-block
-                input(type="email" name="email" placeholder="bestpartner@escoshop.ru").input__field
+                input(type="email" name="email" placeholder="bestpartner@marcobonne.ru").input__field
             .feedback-mini__input
               .input
                 .input__icon
                   +icon(name="input-user").d-block
-                input(type="text" name="name" placeholder="Корноухов Дмитрий").input__field
+                input(type="text" name="name" placeholder="Вадим Лейбин").input__field
             .feedback-mini__btn
-              button.btn
-                span Стать партнёром
+              .btn
+                button(type="submit")
+                  span Получить презентацию
             input(type="text" name="section-name" value="Закрытая" hidden)
-            input(type="text" name="section-name-text" value="Уже уходите? Не упустите свой шанс присоединиться к розничному магазину по продаже аппаратов для парения. Получите бесплатную презентацию на почту" hidden)
-            input(type="text" name="section-btn-text" value="Стать партнёром" hidden)
+            input(type="text" name="section-name-text" value="Уже уходите? Не упускайте шанс присоединиться к партнёрской сети Marco Bonne`. Получите бесплатную презентацию на почту" hidden)
+            input(type="text" name="section-btn-text" value="Получить презентацию" hidden)
           .feedback-mini__agree
             .feedback-mini__agree-checkbox
               input(name="checkbox" type="checkbox" checked="checked" disabled)

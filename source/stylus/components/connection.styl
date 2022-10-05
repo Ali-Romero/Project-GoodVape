@@ -1,0 +1,70 @@
+.connection
+  display: flex
+  align-items: center
+  justify-content: center
+  color: white
+  +above($breakpoints.sm)
+    justify-content: flex-end
+  &:hover
+    .connection__icon
+      svg
+        transform: rotate(10deg)
+  &__icon
+    margin-left: 4px
+    width 26px
+    height: 26px
+    border-radius: 100%
+    border: 1px solid  #FFFFFF;
+    display: flex
+    justify-content: center
+    align-items: center
+    +above($breakpoints.sm)
+      margin-left: 10px
+      width 28px
+      height: 28px
+    +above($breakpoints.lg)
+      width 35px
+      height: 35px
+      margin-left: 17px
+    svg
+      width 10px
+      height: 9px
+      transition: 0.2s
+      +above($breakpoints.sm)
+        width: 12px
+        height: 11px
+
+  &__container
+    text-align: right
+  &__num
+    font-size: 16px
+    line-height: 18px
+    font-family: "Geometria-Bold"
+    +above($breakpoints.lg)
+      font-size: 18px;
+      line-height: 23px;
+
+  &__description
+    font-size: 13px
+    line-height: 15px
+    font-family: "Geometria-Medium"
+    +above($breakpoints.lg)
+      font-size: 15px;
+      line-height: 19px;
+
+  &__description-link
+    cursor: pointer
+    padding-bottom: 5px
+    max-width: 147px
+    margin-left: 10px
+    br
+      display: block
+    span
+      position relative
+      &:before
+        content: ""
+        position: absolute
+        width 100%
+        height: 1px
+        bottom 0
+        background-color: white

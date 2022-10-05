@@ -1,20 +1,20 @@
 mixin connection(index)
   .connection
-    .connection__icon
-      +icon(name="connection-phone").d-block
     .connection__container
       if index
         .connection__num
-          a(href="tel:+79646445034").connection__num-link +7 964 644-50-34
+          a(href="tel:89059449779").connection__num-link 8 (905) 944-97-79
         .connection__description
-          a(href="tel:+79646445034").connection__description-link
+          a(href="tel:89059449779").connection__description-link
             span позвоните сейчас 
             br
             span чтобы не ждать звонка
       else
         .connection__num
-          a(href="tel:+79646445034").connection__num-link +7 964 644-50-34
+          a(href="tel:89059449779").connection__num-link 8 (905) 944-97-79
         .connection__description
-          a(href="#" type="submit" data-remodal-target="modal-form-call").connection__description-link
+          a(href="#" data-remodal-target="modal-form-call").connection__description-link
             span
-             |Заказать звонок
+             |заказать звонок
+    .connection__icon
+      +icon(name="connection-phone").d-block

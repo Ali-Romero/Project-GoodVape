@@ -5,29 +5,31 @@ mixin footer(index)
         .footer__col
           .footer__logo
             +icon(name="logo-main").d-block
-          .footer__social
-            +social()
           .footer__legal
             a(href="#" data-remodal-target="privacy").footer__link Политика конфиденциальности
         .footer__col.footer__col--middle
-          .footer__text ESCOSHOP ®, 2020-
+          .footer__text
+            |Marco Bonne' ®,
+            br
+            |2011-
             span(data-current-year)
             |г.
           .footer__text
-            div ИП Корноухов Дмитрий Ринатович
-            |ИНН 165129443513
+            div
+              |ООО «ИТТАГРУПП»,
+              br
+              |ИНН 3123452348
           .footer__country
             .country
               .country__logo
-                +icon(name="arms").d-block
-              .country__label Россия, Республика Татарстан, 
-                br
-                |Нижнекамск
+                img(src="images/arms.png" loading="lazy" alt="arms" width="38" height="46").d-block
+              .country__label
+                |Российская Федерация, город Москва
         .footer__col
           .footer__phone
             +connection(index)
           .footer__f5
             a(href="https://xn--5-7sbamtgf4aex7b0b.xn--p1ai/" target="_blank" aria-label="f5").f5
               .f5__logo
-                img(src="images/f5.svg" loading="lazy" alt="f5" width="28" height="26").d-block
+                img(src="images/f5.svg" loading="lazy" alt="f5" width="44" height="42").d-block
               .f5__label Упаковка и продвижение <br /> франшиз: «Франчайзинг5»

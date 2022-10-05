@@ -1,2 +1,77 @@
-mixin main-section()
-  section.main-section
+section.main-section
+  .main-section__bg
+    +header('', true)
+    .wrapper
+      .main-section__inner
+        h1.main-section__title
+          span.title
+            |Запустите бизнес в федеральной 
+            br
+            |торговой сети вейп-шопов 
+            br
+            span.title__color Good Vape  
+            |и зарабатывайте 
+            br
+            span.title__color от 300 000 рублей  
+            |ежемесячно
+        .main-section__info-description
+          |Отрегулированные поставки товаров из других 
+          br
+          |стран с реализацией как ходовой, так и эксклюзивной продукции, которой нет у компаний-конкурентов
+
+        .main-section__btn-mobile
+          .btn
+            button(type="submit")
+              span Скачать презентацию
+        .main-section__info
+          .main-section__info-list(data-slider-main)
+            .main-section__info-list-item
+              div 82
+              span
+                |Собственные 
+                br
+                |торговые точки
+            .main-section__info-list-item
+              div До 8 месяцев
+              span Окупаемость
+            .main-section__info-list-item
+              div Более 3500
+              span
+                |Наименований 
+                br
+                |различных товаров
+
+        .main-section__feedback
+          .feedback
+            form(data-feedback-form).feedback__form
+              .feedback__title
+                |Узнайте больше подробностей по франшизе из презентации
+              .feedback__container
+                .feedback__input
+                  .input
+                    .input__icon
+                      +icon(name="input-phone").d-block
+                    input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___ ____").input__field
+                .feedback__input
+                  .input
+                    .input__icon
+                      +icon(name="input-email").d-block
+                    input(type="email" name="email" placeholder="bestpartner@goodvape").input__field
+                .feedback__input
+                  .input
+                    .input__icon
+                      +icon(name="input-user").d-block
+                    input(type="text" name="name" placeholder="Юрий Балановский").input__field
+                .feedback__button
+                  .btn
+                    button(type="submit")
+                      span Скачать презентацию
+              input(type="text" name="section-name" value="Открытая" hidden)
+              input(type="text" name="section-name-text" value="Узнайте больше подробностей по франшизе из презентации" hidden)
+              input(type="text" name="section-btn-text" value="Скачать презентацию" hidden)
+              .feedback__agree
+                .feedback__agree-checkbox
+                  input(name="checkbox" type="checkbox" checked="checked" disabled)
+                .feedback__agree-text
+                  |Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых 
+                  a(href="#" data-remodal-target="privacy").agree-link Политикой конфиденциальности

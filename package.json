@@ -40,6 +40,7 @@
     "jquery-validation": "^1.19.3",
     "jquery.cookie": "^1.4.1",
     "remodal": "^1.1.1",
+    "slick-carousel": "^1.8.1",
     "wowjs": "^1.1.3"
   }
 }

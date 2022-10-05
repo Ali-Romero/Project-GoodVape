@@ -4,8 +4,13 @@ mixin header(index)
       .header__inner
         .header__logo.d-block
           +icon(name="logo-main").d-block
+          .header__description
+            |В 
+            span 2021 году 
+            |компания открыла 
+            span 42 
+            |новые торговые точки, что позволило расширить сеть на 
+            span 51%
 
-        .header__description
-          |Стильный магазин дымной продукции с широким ассортиментом, доступными ценами и более 100 товаров
         .header__connection
           +connection(index)

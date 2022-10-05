@@ -1,15 +1,12 @@
 extends ../layouts/base
 include ../components/Icon
 include ../components/Header
-include ../components/MainSection
 include ../components/Footer
 include ../components/Connection
 include ../components/Social
 block body
   .page
     .page__header
-      +header('', true)
-      +main-section()
     .page__content
       block content
 

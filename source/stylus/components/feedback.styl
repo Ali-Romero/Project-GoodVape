@@ -1,0 +1,122 @@
+.feedback
+  position relative
+  max-width: 290px
+  margin: 0 auto
+  +above($breakpoints.sm)
+    margin: 0
+    max-width: 740px
+  +above($breakpoints.lg)
+    max-width: 1160px;
+
+  &__form
+    background: #FFFFFF;
+    backdrop-filter: blur(2px);
+    border-radius: 7px;
+    position relative
+    z-index 1
+    padding: 22px 16px 12px 16px
+    +above($breakpoints.sm)
+      padding: 16px 14px 12px 16px
+    +above($breakpoints.lg)
+      padding: 34px 62px 34px 61px
+
+  &__title
+    font-family: "Geometria-Medium"
+    font-size: 15px;
+    line-height: 20px
+    text-align: center;
+    color: #00003F;
+    margin-bottom: 16px
+    font-weight: bold
+    +above($breakpoints.sm)
+      font-size: 15px;
+      line-height: 20px
+    +above($breakpoints.lg)
+      margin-bottom: 23px
+      font-size: 25px;
+      line-height: 31px;
+
+
+
+  &__container
+    display: flex
+    justify-content: space-between
+    margin-bottom: 18px
+    flex-direction: column
+    align-items: center
+    +above($breakpoints.sm)
+      flex-direction: row
+
+  &__input
+    max-width: 246px;
+    width: 100%
+    margin-bottom: 18px
+    height: 44px
+    +above($breakpoints.sm)
+      height: 40px
+      margin-bottom: 0
+      max-width: 170px;
+    +above($breakpoints.lg)
+      height: 64px
+      max-width: 235px
+    svg
+      fill: none
+    &:nth-child(1)
+      svg
+        width: 14px
+        height: 14px
+        +above($breakpoints.lg)
+          width: 20px
+          height: 20px
+    &:nth-child(2)
+      svg
+        width: 14px
+        height: 14px
+        +above($breakpoints.lg)
+          width: 20px
+          height: 16px
+    &:nth-child(3)
+      svg
+        width: 15px
+        height: 15px
+        +above($breakpoints.lg)
+          width: 16px
+          height: 18px
+
+  &__button
+    max-width: 246px;
+    height: 44px;
+    width: 100%;
+    +above($breakpoints.sm)
+      height: 50px;
+      max-width: 182px;
+    +above($breakpoints.lg)
+      max-width: 300px
+      height: 78px
+
+  &__agree
+    display: flex
+    justify-content: center
+    +above($breakpoints.lg)
+      align-items: center
+
+  &__agree-text
+    font-size: 9px;
+    line-height: 14px
+    color: #AEAEAF;
+    max-width: 594px
+    text-align: center
+    +above($breakpoints.lg)
+      max-width: 1006px
+      text-align: left
+      font-size: 11px;
+      line-height: 20px
+    a
+      color: #AEAEAF;
+      text-decoration: underline
+
+  &__agree-checkbox
+    margin-right: 10px
+    input
+      margin: 0
+
