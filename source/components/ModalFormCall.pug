@@ -1,0 +1,43 @@
+.remodal.remodal--feedback(data-remodal-id="modal-form-call" data-remodal-options="modifier: modal-scrollable, hashTracking:false")
+  .remodal__feedback
+    .remodal__feedback-close(data-remodal-action="close")
+      +icon(name="icon-close").d-block.remodal__feedback__icon
+    .feedback-mini
+      form(data-feedback-form).feedback-mini__form.feedback-mini__form--call
+        .feedback-mini__form-container
+          .feedback-mini__title
+            |Запишитесь на 
+            br
+            |онлайн-консультацию
+            div
+              |чтобы узнать подробнее
+              br
+              |о франшизе ESCOSHOP
+          .feedback-mini__container
+            .feedback-mini__input
+              .input
+                .input__icon
+                  +icon(name="input-phone").d-block
+                input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___ ____").input__field
+            .feedback-mini__input
+              .input
+                .input__icon
+                  +icon(name="input-email").d-block
+                input(type="email" name="email" placeholder="bestpartner@escoshop.ru").input__field
+            .feedback-mini__input
+              .input
+                .input__icon
+                  +icon(name="input-user").d-block
+                input(type="text" name="name" placeholder="Корноухов Дмитрий").input__field
+            .feedback-mini__btn
+              button.btn
+                span Узнать подробности
+            input(type="text" name="section-name" value="Закрытая" hidden)
+            input(type="text" name="section-name-text" value="Запишитесь на онлайн-консультацию, чтобы узнать подробнее о франшизе ESCOSHOP" hidden)
+            input(type="text" name="section-btn-text" value="Узнать подробности" hidden)
+          .feedback-mini__agree
+            .feedback-mini__agree-checkbox
+              input(name="checkbox" type="checkbox" checked="checked" disabled)
+            .feedback-mini__agree-text
+              |Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых 
+              a(href="#" data-remodal-target="privacy").agree-link Политикой конфиденциальности

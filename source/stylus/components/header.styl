@@ -1,0 +1,36 @@
+.header
+  &__inner
+    color: white
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 25px 0
+    +above($breakpoints.sm)
+      padding: 35px 0
+    +above($breakpoints.lg)
+      padding: 45px 0
+
+  &__logo
+    svg
+      width: 122px
+      height: 21px
+      +above($breakpoints.sm)
+        width: 142px
+        height: 25px
+      +above($breakpoints.lg)
+        width: 241px
+        height: 41px
+
+  &__description
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      max-width: 364px
+      width 100%
+      text-align: center
+      font-size: 12px;
+      line-height: 16px
+    +above($breakpoints.lg)
+      font-size: 14px;
+      line-height: 21px
+      max-width: 496px

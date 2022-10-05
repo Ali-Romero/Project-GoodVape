@@ -1,0 +1,81 @@
+.footer
+  background-color: #2E2E2E;
+  color: white
+  font-size: 12px
+  line-height: 15px
+  &__row
+    padding: 28px 0 24px 0
+    +above($breakpoints.sm)
+      display: flex
+      justify-content: space-between
+  &__col
+    margin-bottom: 30px
+    +above($breakpoints.sm)
+      margin-bottom: 0
+      display: flex
+      flex-direction: column
+      justify-content: space-between;
+    &--middle
+      +above($breakpoints.sm)
+        order: -1
+
+  &__logo
+    margin-bottom: 19px
+    svg
+      width: 203px
+      height: 36px
+      margin: 0 auto
+      +above($breakpoints.lg)
+        width: 242px
+        height: 42px
+
+  &__legal,
+  &__social
+    display: flex
+    justify-content: center
+    margin-bottom: 18px
+
+  &__legal
+    margin-bottom: 0
+
+  &__link
+    position relative
+    &:before
+      content: ""
+      position: absolute
+      width 100%
+      height: 1px
+      background-color: white
+      bottom 0
+
+  &__text
+    margin-bottom: 16px
+    text-align: center
+    +above($breakpoints.sm)
+      margin-bottom: 26px
+      text-align: left
+
+  &__f5
+    &:hover
+      .f5__label
+        text-decoration: underline
+    .f5
+      display: flex
+      max-width: 207px
+      margin: 0 auto
+      &__logo
+        margin-right: 10px
+
+  &__phone
+    margin-bottom: 30px
+
+.country
+  display: flex
+  justify-content: center
+  +above($breakpoints.sm)
+    justify-content: flex-start
+  &__logo
+    margin-right: 14px
+
+  &__label
+    max-width: 195px

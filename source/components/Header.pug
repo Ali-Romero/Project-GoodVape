@@ -1,0 +1,11 @@
+mixin header(index)
+  header.header
+    .wrapper
+      .header__inner
+        .header__logo.d-block
+          +icon(name="logo-main").d-block
+
+        .header__description
+          |Стильный магазин дымной продукции с широким ассортиментом, доступными ценами и более 100 товаров
+        .header__connection
+          +connection(index)

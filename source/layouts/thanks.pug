@@ -1,0 +1,17 @@
+extends ../layouts/base
+include ../components/Icon
+include ../components/Header
+include ../components/Footer
+include ../components/Connection
+include ../components/Social
+
+block body
+  .page
+    .page__header
+      +header(true)
+
+    .page__content.page__content--layout
+      block content
+
+    .page__footer
+      +footer(true)

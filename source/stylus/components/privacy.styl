@@ -1,0 +1,71 @@
+.content-privacy
+  max-width: 300px
+  width: 100%
+  padding: 24px 16px
+  background-color: $color-white
+  text-align: start
+  position: relative
+
+  +above($breakpoints.sm)
+    padding: 24px 44px
+    max-width: 450px
+  +above($breakpoints.md)
+    max-width: 650px
+
+  &__close
+    cursor: pointer
+    position: absolute
+    top: 12px
+    right: 15px
+
+    +above($breakpoints.sm)
+      top: 20px
+      right: 20px
+
+  &__icon
+    fill: rgba(255, 204, 92, 1)
+
+    &:hover
+      color: $color-red
+
+.content-privacy h2
+  font-family: "AvenirNextCyr-Medium"
+  text-align: center
+  margin-bottom: 30px
+  font-size: 17px
+  line-height: 22px
+  font-weight: bold
+  +above($breakpoints.sm)
+    font-size: 24px
+    line-height: 30px
+  +above($breakpoints.lg)
+    font-size: 26px
+    line-height: 32px
+
+.content-privacy
+  h3,
+  strong
+    font-family: "AvenirNextCyr-Medium"
+    margin-bottom: 10px
+    font-size: 14px
+    line-height: 16px
+    +above($breakpoints.sm)
+      font-size: 16px
+      line-height: 20px
+    +above($breakpoints.lg)
+      font-size: 18px
+      line-height: 24px
+  p
+    font-size: 14px
+    line-height: 16px
+
+    +above($breakpoints.lg)
+      font-size: 16px
+      line-height: 18px
+
+.content-privacy p
+  padding: 0 10px
+  margin: 5px 0
+  +above($breakpoints.sm)
+    margin: 10px 0
+    padding: 0 20px
