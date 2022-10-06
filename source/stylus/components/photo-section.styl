@@ -1,0 +1,180 @@
+.photo-section
+  background-color: #010B1C
+  position relative
+  z-index 1
+  overflow: unset
+  &:before
+    content: ""
+    position: absolute
+    width 100%
+    height: 100%
+    z-index -1
+    padding-bottom: 276px
+    pointer-events: none
+    background-image: url('../images/decor-dots-3.svg'),
+      url('../images/decor-dots-2.svg')
+    background-repeat: no-repeat
+    background-size: 117px 178px, 250px 114px;
+    background-position-y: 0px, 1670px
+    background-position-x: calc(0% - -14px), calc(100% - -104px);
+    top: -62px;
+    padding-bottom: 62px;
+    +above($breakpoints.sm)
+      background-position-y: 0px, 936px
+      background-position-x: calc(0% - -14px), calc(100% - -104px);
+    +above($breakpoints.lg)
+      background-size: 117px 178px, 277px 189px;
+      background-position-y: 0px, 668px;
+      background-position-x: calc(0% - -8px), calc(100% - -148px);
+      top: -62px;
+      padding-bottom: 62px;
+    +above($breakpoints.xxxxxl)
+      padding-bottom: 276px
+      top: -276px
+      background-size: 264px 572px, 572px 264px
+      background-position-y: 0px, 865px
+      background-position-x: calc(0% - 33px), calc(100% - -241px)
+
+  &__wrapper
+    overflow: hidden
+  &__inner
+    padding: 60px 0 78px 0
+    position relative
+    z-index 1
+    +above($breakpoints.lg)
+      padding: 85px 0 163px 0
+    &:before
+      content: ""
+      position: absolute
+      z-index -1
+      right: 0
+      margin: 0 auto
+      background: #6D4EE7;
+      width: 267px;
+      height: 967px;
+      left: 0px;
+      top: 368px;
+      filter: blur(303.5px);
+      +above($breakpoints.sm)
+        width: 712px;
+        height: 229px;
+        top: 368px;
+        filter: blur(244.5px);
+      +above($breakpoints.lg)
+        filter: blur(198.5px);
+        width 1351px
+        height: 150px
+        left: -118px
+        top: 303px;
+  &__title
+    text-align: center
+    margin-bottom: 8px
+  &__title-info
+    text-align: center
+    margin-bottom: 53px
+  &__card
+    margin-bottom: 26px
+    +above($breakpoints.lg)
+      margin-bottom: 53px
+    ul
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+      max-width: 518px
+      margin: 0 auto
+      +above($breakpoints.lg)
+        max-width: 1160px
+        justify-content: space-between
+      li
+        max-width: 240px
+        width 100%
+        margin-bottom: 20px
+        +above($breakpoints.lg)
+          max-width: 260px
+          margin-bottom: 0
+  &__info
+    text-align: center
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 672px
+    margin: 0 auto 38px auto
+    +above($breakpoints.sm)
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 auto 64px auto
+    +above($breakpoints.lg)
+      max-width: 828px
+      font-size: 20px;
+      line-height: 25px;
+      margin: 0 auto 85px auto
+  &__container
+    max-width: 735px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      display: flex
+      justify-content: center
+  &__btn
+    max-width: 240px
+    width 100%
+    height: 52px
+    margin: 0 auto 20px auto
+    +above($breakpoints.sm)
+      max-width: 250px
+      height: 58px
+      margin: 0
+      margin-right: 23px
+    +above($breakpoints.lg)
+      max-width: 300px
+      height: 78px
+      margin-right: 23px
+  &__btn-info
+    div
+      max-width: 255px
+      font-size: 13px;
+      line-height: 17px;
+      +above($breakpoints.sm)
+        max-width: 300px
+        font-size: 15px;
+        line-height: 19px;
+      +above($breakpoints.lg)
+        max-width: 389px
+        font-size: 17px;
+        line-height: 21px;
+.photo-card
+  min-height: 290px
+  border-radius: 10px 10px 5px 5px;
+  overflow: hidden
+  display: flex
+  align-items: flex-end
+  background: #D9D9D9;
+  background-repeat: no-repeat;
+  background-position: top
+  background-size: 240px auto;
+  +above($breakpoints.lg)
+    min-height: 327px
+    border-radius: 10px 10px 5px 5px;
+    background-size: 260px auto;
+  &--1
+    background-image: url(../images/photo-card-1.png);
+  &--2
+    background-image: url(../images/photo-card-2.png);
+  &--3
+    background-image: url(../images/photo-card-3.png);
+  &--4
+    background-image: url(../images/photo-card-4.png);
+  &__info
+    width 100%
+    background: linear-gradient(270deg, #D523EA 4.5%, #256CE6 100%);
+    padding: 8px
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 72px
+    text-align: center
+    font-size: 14px;
+    line-height: 18px;
+    +above($breakpoints.lg)
+      padding: 12px
+      min-height: 85px
+      font-size: 16px;
+      line-height: 20px;

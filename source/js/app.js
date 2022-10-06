@@ -18,6 +18,12 @@ function initSliderMain() {
     ]
   })
 }
+function initDemandToggle() {
+  $('.js-arrow-demand').on('click', function () {
+    $('.js-arrow-demand').removeClass('active')
+    $(this).closest('.js-demand-parent').find('.js-demand-item').toggleClass('active')
+  })
+}
 
 
 function setCurrentYear() {
@@ -42,6 +48,7 @@ $(document).ready(function() {
   setCurrentYear()
   initWow()
   initSliderMain()
+  initDemandToggle()
 
   $("input").inputmask()
 });

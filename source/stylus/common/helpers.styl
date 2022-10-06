@@ -24,20 +24,60 @@ h1,
   &__color
     color: #6D4EE7
 h2
-  font-size: 20px
+  font-size: 23px
   line-height: 28px
   text-align: center
-
+  color: white
   +above($breakpoints.sm)
-    font-size: 28px
-    line-height: 38px
-  +above($breakpoints.md)
-    font-size: 35px
-    line-height: 42px
+    font-size: 22px
+    line-height: 28px
   +above($breakpoints.lg)
-    font-size: 48px
-    line-height: 54px
+    font-size: 36px;
+    line-height: 44px;
+  span
+    color: #6651E7
 
+    text-align: center;
+
+.title-info
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  font-family: "Geometria-Medium"
+  color: rgba(255, 255, 255, 0.7);
+  +above($breakpoints.sm)
+    font-size: 14px;
+    line-height: 21px;
+  +above($breakpoints.lg)
+    font-size: 17px;
+    line-height: 21px;
+
+.btn-info
+  position relative
+  display: flex
+  align-items: center
+  justify-content: center
+  +above($breakpoints.sm)
+    padding-left: 14px
+    justify-content: flex-start
+  +above($breakpoints.lg)
+    padding-left: 23px
+  &:before
+    content: ""
+    position: absolute
+    width: 2.19089px
+    background-color: #545a67
+    border-radius: 10px;
+    left: 0;
+    margin: auto 0;
+    top: 0
+    bottom: 0
+    +above($breakpoints.sm)
+      top: 6px
+      bottom: 6px
+    +above($breakpoints.lg)
+      top: 8px
+      bottom: 8px
 .d-flex
   display: flex
 
