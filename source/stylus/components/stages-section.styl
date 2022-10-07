@@ -1,0 +1,118 @@
+.stages-section
+  background-color: #051125
+  position relative
+  z-index 4
+  &:before
+    content: ""
+    position: absolute
+    width 100%
+    height: 100%
+    pointer-events: none
+    background-image: url('../images/decor-num-10.svg'),
+      url('../images/decor-text-stages.svg')
+    background-repeat: no-repeat
+    background-size: 281px auto, 58px 334px
+    background-position: calc(50% - 766px), calc(50% - -764px)
+    background-position-y: 358px, calc(50% - -240px)
+  &__inner
+    padding: 40px 0 50px 0
+    +above($breakpoints.sm)
+      padding: 58px 0 70px 0
+  &__title
+    margin: 0 0 10px 0
+  &__title-info
+    margin: 0 0 43px 0
+    
+  &__table
+    border-radius: 7px;
+    overflow: hidden
+    margin-bottom: 33px
+    +above($breakpoints.sm)
+      background-color: #091E41;
+      border: 1px solid rgba(0, 0, 0, 0.22);
+  &__header
+    display: none
+    +above($breakpoints.sm)
+      background: #6C4EE7;
+      height: 60px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 0 20px
+      font-size: 18px;
+      line-height: 22px;
+      font-family: "Geometria-Bold"
+    +above($breakpoints.lg)
+      height: 82px
+      padding: 0 32px
+      font-size: 20px;
+      line-height: 25px;
+  &__info
+    ul
+      padding: 10px 0
+      +above($breakpoints.sm)
+        padding: 10px 20px
+      +above($breakpoints.lg)
+        padding: 10px 32px
+      li
+        min-height: 52px
+        font-size: 14px;
+        line-height: 18px;
+        background-color: #091E41;
+        border-bottom: 1px solid #7e7e7e
+        margin-bottom: 6px
+        border-radius: 4px
+        padding: 6px 0 0 0
+        +above($breakpoints.sm)
+          border-radius: 0
+          background-color: unset
+          border-bottom: 1px solid #FFFFFF;
+          margin-bottom: 0
+          padding: 0
+          display: flex
+          justify-content: space-between
+          align-items: center
+        +above($breakpoints.lg)
+          font-size: 16px;
+          line-height: 20px;
+        &:last-child
+          +above($breakpoints.sm)
+            border-bottom: 0
+        .stages-mb-title
+          color #6C4EE7;
+          padding: 4px 20px
+          text-align: center
+          font-size: 18px
+          line-height: 20px
+          font-family: "Geometria-Bold"
+          +above($breakpoints.sm)
+            display: none
+        .stages-value
+          max-width: 550px
+          padding: 6px
+          text-align: center
+          +above($breakpoints.sm)
+            padding: 0
+            text-align: left
+          +above($breakpoints.lg)
+            max-width: 100%
+        .stages-value-num
+          font-family: "Geometria-Medium"
+          font-size: 16px;
+          line-height: 20px;
+          padding: 6px
+          text-align: center
+          +above($breakpoints.sm)
+            text-align: right
+            padding: 0
+          +above($breakpoints.lg)
+            font-size: 18px;
+            line-height: 23px;
+
+  &__table-info
+    max-width: 284px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      max-width: 725px
+    +above($breakpoints.lg)
+      max-width: 930px

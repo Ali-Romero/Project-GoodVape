@@ -1,0 +1,212 @@
+.finance-section
+  position relative
+  z-index 1
+  background-color: #010B1C
+  background-image: url('../images/finance-bg-img.jpg')
+  background-repeat: no-repeat
+  background-size: 585px auto;
+  background-position: calc(50% - -81px);
+  background-position-y: bottom;
+  +above($breakpoints.sm)
+    background-size: 1171px auto;
+    background-position: calc(50% - 50px);
+    background-position-y: bottom;
+  +above($breakpoints.lg)
+    background-size: 1920px auto;
+  &:before
+    content: ""
+    position: absolute
+    width 100%
+    height: 100%
+    z-index -1
+    background-image: url('../images/decor-dots-1.svg'),
+      url('../images/decor-dots-3.svg')
+    background-repeat: no-repeat
+    background-size: 268px 116px, 95px 252px;
+    background-position-y: -34px, 220px;
+    background-position-x: calc(0% - 154px), calc(100% - 7px);
+    +above($breakpoints.lg)
+      background-size: 379px 181px, 179px 303px;
+      background-position-y: -36px, 240px;
+      background-position-x: calc(0% - 186px), calc(100% - -22px);
+    +above($breakpoints.xxxxxl)
+      background-size: 572px 264px, 264px 572px;
+      background-position-y: -36px, 240px;
+      background-position-x: calc(0% - 233px), calc(100% - -10px);
+  &__inner
+    padding: 50px 0 250px 0 
+    +above($breakpoints.sm)
+      padding: 50px 0 60px 0
+    +above($breakpoints.lg)
+      padding: 75px 0 88px 0
+  &__title
+    margin-bottom: 26px
+  &__title-info
+    margin-bottom: 52px
+  &__info
+    display: flex
+    justify-content: flex-end
+.finance-info
+  position relative
+  max-width: 572px
+  width 100%
+  background: linear-gradient(90deg, rgba(9, 30, 65, 0.68) 6.33%, rgba(9, 30, 65, 0) 69.17%);
+  backdrop-filter: blur(19px);
+  border-radius: 30px;
+  padding: 16px 20px
+  +above($breakpoints.sm)
+    padding: 30px 20px 17px 40px;
+  +above($breakpoints.lg)
+    max-width: 845px
+    padding: 60px 72px 56px 103px;
+  &:before
+    content: ""
+    position: absolute
+    pointer-events: none
+    top: 0
+    bottom: 0
+    left: 0
+    right 0
+    border-top: 1px solid #6651E74D
+    border-left: 1px solid #6651E74D
+    border-right: 1px solid #d624eb38
+    border-bottom: 1px solid #d624eb29
+    border-radius: 30px;
+  &__list
+    margin-bottom: 16px
+    +above($breakpoints.sm)
+      margin-bottom: 32px
+  &__list-item
+    padding: 20px 0
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    +above($breakpoints.lg)
+      padding: 33px 0
+    &:last-child
+      border: 0
+    &:nth-child(2)
+      .finance-info__value
+        margin-left: 44px
+  &__list-item-container
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Geometria-Medium"
+    +above($breakpoints.sm)
+      display: flex
+      justify-content: space-between
+      align-items: center
+    +above($breakpoints.lg)
+      font-size: 23px;
+      line-height: 29px;
+  &__toggle-info
+    display: none
+    ul
+      max-width: 456px
+      margin: 0 0 0 auto
+      padding: 16px 0 0 0
+      +above($breakpoints.lg)
+        padding: 20px 0 0 0
+        max-width: 597px
+      li
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        min-height: 26px
+        font-size: 13px;
+        line-height: 17px;
+        padding: 4px 0
+        +above($breakpoints.sm)
+          display: flex
+          justify-content: space-between
+          align-items: center 
+        +above($breakpoints.lg)
+          height: 31px
+          font-size: 15px;
+          line-height: 19px;
+        &:last-child
+          border-bottom: 0
+        br
+          display: block
+          +above($breakpoints.sm)
+            display: none
+  &__name
+    display: flex
+    &--active
+      cursor pointer
+      -webkit-tap-highlight-color: transparent;
+      &.active-finance
+        .close
+          opacity 0
+        .open
+          opacity 1
+
+  &__name-icon
+    width 30px
+    height: 30px
+    border-radius: 100%
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #091E41;
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor pointer
+    margin-right: 12px
+    position: relative
+    +above($breakpoints.sm)
+      width 36px
+      height: 36px
+      margin-right: 18px
+    +above($breakpoints.lg)
+      margin-right: 23px
+      width 50px
+      height: 50px
+    svg
+      position: absolute
+      transition: 0.6s
+    .open
+      opacity 0
+      
+  &__name-box
+    div
+      color: rgba(255, 255, 255, 0.33);
+      font-family: "Geometria-Regular"
+  &__value
+    // 
+
+  &__btn-container
+    margin-bottom: 33px
+    +above($breakpoints.sm)
+      display: flex
+  &__btn
+    max-width: 224px
+    width 100%
+    height: 50px
+    margin: 0 auto 20px auto
+    +above($breakpoints.sm)
+      max-width: 224px
+      height: 54px
+      margin: 0 24px 0 0
+    +above($breakpoints.lg)
+      max-width: 300px
+      margin: 0 44px 0 0
+      height: 78px
+  &__btn-info
+    div
+      max-width: 242px
+      font-size: 13px;
+      line-height: 17px;
+      +above($breakpoints.sm)
+        max-width: 254px
+        font-size: 14px;
+        line-height: 19px;
+      +above($breakpoints.lg)
+        max-width: 311px
+        font-size: 16px;
+        line-height: 20px;
+  &__helper
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.33);
+    font-style: italic
+    font-family: "Geometria-Light"
+    max-width: 496px
+    +above($breakpoints.lg)
+      max-width: 614px
+      font-size: 17px;
+      line-height: 21px;

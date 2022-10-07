@@ -1,22 +1,52 @@
 .support-section
   background-color: #010B1C;
   position relative
-  z-index 1
+  z-index 5
   overflow: unset
   &:before
     content: ""
     position: absolute
     width 100%
-    height: 1214px
+    height: 100%
     z-index -1
+    height: 1307px
     pointer-events: none
     background-image: url('../images/support-bg-decor.png')
     background-repeat: no-repeat
-    background-size: 158px auto;
+    background-size: 90px auto;
     background-position: left
     background-position-y: bottom
+    bottom: -58px
+    +above($breakpoints.sm)
+      bottom: -124px
+    +above($breakpoints.lg)
+      background-size: 158px auto;
+      bottom: -200px
     +above($breakpoints.xxxxxl)
+      bottom: -230px
       background-size: 269px auto
+  &:after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 57px;
+    background-image: url('../images/decor-dots-3.svg')
+    background-repeat: no-repeat
+    background-size: 94px 179px;
+    background-position: right
+    background-position-y: bottom
+    pointer-events: none
+    +above($breakpoints.sm)
+      background-size: 160px 257px;
+      top: 172px;
+    +above($breakpoints.lg)
+      background-size: 184px 313px;
+      top: 172px;
+    +above($breakpoints.xxxxxl)
+      top: 482px
+      background-size: 264px 572px;
+
   &__wrapper
     overflow hidden
   &__inner
@@ -178,13 +208,11 @@
       align-items: center
       border-radius: 100%
       cursor: pointer
+      -webkit-tap-highlight-color: transparent;
   &__arrows-prev
     transform: rotate(270deg)
   &__arrows-next
     transform: rotate(90deg)
-  &__progress
-    // 
-
 .support-card
   width: 100%;
   height: 270px;
@@ -217,9 +245,6 @@
         font-size: 16.0054px;
         line-height: 20px;
 
-
-
-
 .progress-bar
   height: 6px;
   background: #232E40;
@@ -242,8 +267,6 @@
     transition: width 0.3s;
     +above($breakpoints.lg)
       padding: 4px;
-
-
   &__items
     position: absolute;
     top: 10px;
@@ -251,14 +274,10 @@
     width: 100%;
     height: 100%;
     display: flex;
-
-
   &__item
     flex: 1;
     display: flex;
     justify-content: space-between;
-
-
   &__number
     opacity: 0.19;
     color: #FFFFFF;

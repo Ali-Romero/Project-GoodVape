@@ -1,0 +1,78 @@
+section.profit-section
+  .wrapper
+    .profit-section__inner
+      h2.profit-section__title
+        |Рассчитайте будущую 
+        span ежемесячную прибыль 
+        |за минуту
+      .profit-section__title-info.title-info
+        |Бизнес-процессы выстроены таким образом, чтобы можно было выйти на запланированные финансовые показатели уже через 6 месяцев после начала работы.
+      .profit-section__calc
+        .profit-calc
+          .profit-calc__btn-container
+            .profit-calc__btn.active(data-tab-button data-tab-target="1")
+              div
+                |Финансовые 
+                br
+                |показатели
+            .profit-calc__btn(data-tab-button data-tab-target="2")
+              div
+                |Экономические 
+                br
+                |показатели
+          .profit-calc__wrapper
+            .calc.active(data-tab="1")
+              .calc__input.range-slider
+                .calc__input-text Количество точек
+                .calc__input-label
+                  input(type="text" value="" name="range").js-range-slider-1
+
+              .calc__input.range-slider
+                .calc__input-text Количество продаж в день
+                .calc__input-label
+                  input(type="text" value="" name="range").js-range-slider-2
+              .calc__input.range-slider
+                .calc__input-text
+                  |Количество продаж в день
+                .calc__input-label.calc__input-label--3
+                  input(type="text" value="" name="range").js-range-slider-3
+              .calc__total
+                .calc__total-item
+                  |Выручка за месяц
+                  div
+                    span.js-price
+                    span.font-rub  &#97
+                .calc__total-item
+                  |Предполагаемая 
+                  br
+                  |прибыль за месяц
+                  div
+                    span.js-total-profit
+                    span.font-rub  &#97
+
+            .calc-info(data-tab="2")
+              .calc-info__title Чистая прибыль, рентабельность, окупаемость
+              ul
+                li
+                  div Средняя выручка
+                  div.js-price  
+                    span.font-rub &#97
+                li
+                  div Средняя чистая прибыль
+                  div.js-total-profit  
+                    span.font-rub &#97
+                li
+                  div
+                    |Средняя рентабельность по 
+                    br
+                    |чистой прибыли, %
+                  div 26,76%
+                li
+                  div Окупаемость, мес
+                  div 7
+                li
+                  div
+                    |Мощность на этапе запуска 
+                    br
+                    |(в первый мес.)
+                  div 50,00%
