@@ -1,0 +1,276 @@
+.support-section
+  background-color: #010B1C;
+  position relative
+  z-index 1
+  overflow: unset
+  &:before
+    content: ""
+    position: absolute
+    width 100%
+    height: 1214px
+    z-index -1
+    pointer-events: none
+    background-image: url('../images/support-bg-decor.png')
+    background-repeat: no-repeat
+    background-size: 158px auto;
+    background-position: left
+    background-position-y: bottom
+    +above($breakpoints.xxxxxl)
+      background-size: 269px auto
+  &__wrapper
+    overflow hidden
+  &__inner
+    padding: 50px 0 40px 0
+    +above($breakpoints.sm)
+      padding: 76px 0 50px 0
+    +above($breakpoints.lg)
+      padding: 124px 0 96px 0
+  &__container
+    margin-bottom: 30px
+    +above($breakpoints.sm)
+      position: relative
+    +above($breakpoints.lg)
+      margin-bottom: 55px
+  &__container-wrapper
+    max-width: 511px
+    margin-bottom: 30px
+    +above($breakpoints.sm)
+      margin-bottom: 0
+      position: absolute
+  &__title
+    margin-bottom: 20px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+    +above($breakpoints.lg)
+      margin-bottom: 31px
+    br
+      display: block
+  &__title-info
+    text-align: left
+    max-width: 306px
+    margin-bottom: 48px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: center
+      margin-bottom: 30px
+    +above($breakpoints.lg)
+      margin-bottom: 63px
+      max-width: 418px
+  &__price
+    display: flex
+    align-items: center
+    div
+      font-family: "Geometria-Bold"
+      &:first-child
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.7);
+        max-width: 160px
+        margin-right: 7px
+        +above($breakpoints.lg)
+          font-size: 17px;
+          line-height: 21px;
+      &:last-child
+        font-size: 22px;
+        line-height: 30px;
+        color: #6C4EE7;
+        +above($breakpoints.lg)
+          font-size: 30px;
+          line-height: 38px;
+
+
+  &__slider
+    max-width: 280px;
+    margin: 0 auto 26px auto
+    +above($breakpoints.sm)
+      max-width: 426px;
+      margin: 0 0 48px auto
+    +above($breakpoints.lg)
+      margin: 0 0 62px auto
+      max-width: 560px;
+  &__progress
+    padding-bottom: 46px
+    max-width: 700px;
+    margin: 0 auto;
+    +above($breakpoints.lg)
+      max-width: 100%
+.slider-support
+  &__container
+    position relative
+    padding-bottom: 44px
+    +above($breakpoints.lg)
+      padding-bottom: 54px
+  &__list
+    margin: 0 -26px
+
+    .slick-list
+      padding: 0 26px !important
+      +above($breakpoints.sm)
+        padding: 0 64px !important
+      +above($breakpoints.lg)
+        padding: 0 87px !important
+
+    .slick-track
+      max-width: 100%!important;
+      transform: translate3d(0, 0, 0)!important;
+      perspective: 100px;
+
+    .slick-slide
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      opacity: 0;
+      width: 100%!important;
+      transform: translate3d(-10px, -20px, -60px);
+      transition: transform 1s, opacity 2s;
+
+    .slick-snext,
+    .slick-sprev
+      display: block;
+
+    .slick-current
+      opacity: 1;
+      position: relative;
+      display: block;
+      transform: translate3d(0, 0, 0);
+      transition: transform 0.7s, opacity 0s;
+      z-index: 2;
+
+    .slick-snext
+      opacity: 0.4;
+      z-index: 1;
+      transition: transform 0.9s, opacity 0.8s;
+      transform: translate3d(64px, 0, -25px);
+      +above($breakpoints.sm)
+        transform: translate3d(84px, 0, -25px);
+      +above($breakpoints.lg)
+        transform: translate3d(130px, 0, -25px);
+
+    .slick-sprev
+      opacity: 0.4;
+      transition: transform 0.9s, opacity 0.8s;
+      transform: translate3d(-64px, 0, -25px);
+      +above($breakpoints.sm)
+        transform: translate3d(-84px, 0, -25px);
+      +above($breakpoints.lg)
+        transform: translate3d(-130px, 0, -25px);
+  &__arrows
+    display: flex
+    justify-content: space-between
+    position: absolute
+    max-width: 115px
+    width 100%
+    margin: 0 auto
+    left: 0
+    right 0
+    bottom: 0
+    z-index 1
+    .slider-arrow
+      width 26px
+      height: 26px
+      background-color: #6C4EE7;
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 100%
+      cursor: pointer
+  &__arrows-prev
+    transform: rotate(270deg)
+  &__arrows-next
+    transform: rotate(90deg)
+  &__progress
+    // 
+
+.support-card
+  width: 100%;
+  height: 270px;
+  background: linear-gradient(142.81deg, #6651E7 21.57%, #D624EB 62.63%);
+  box-shadow: 7.00236px 0px 11.0037px rgba(0, 0, 0, 0.25);
+  border-radius: 10.0034px;
+  padding: 30px 10px 20px 20px;
+  +above($breakpoints.sm)
+    height: 244px;
+  +above($breakpoints.lg)
+    padding: 43px 28px
+    height: 305px;
+  span
+    color: white
+    display block
+    &:first-child
+      font-family: "Geometria-Bold"
+      font-size: 20px;
+      line-height: 26px;
+      max-width: 366px
+      margin-bottom: 18px
+      +above($breakpoints.lg)
+        font-size: 29.8468px;
+        line-height: 38px;
+        margin-bottom: 24px
+    &:last-child
+      font-size: 14.0054px;
+      line-height: 18px;
+      +above($breakpoints.lg)
+        font-size: 16.0054px;
+        line-height: 20px;
+
+
+
+
+.progress-bar
+  height: 6px;
+  background: #232E40;
+  border-radius: 40px;
+  position: relative;
+  +above($breakpoints.lg)
+    height: 8px;
+
+
+  &__track
+    position: absolute;
+    padding: 3px;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 40px;
+    background: #6C4EE7;
+    box-sizing: border-box;
+    transition: width 0.3s;
+    +above($breakpoints.lg)
+      padding: 4px;
+
+
+  &__items
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+
+  &__item
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+
+  &__number
+    opacity: 0.19;
+    color: #FFFFFF;
+    margin-left: -4px
+    margin-top: 12px
+    font-size: 15px;
+    line-height: 15px;
+    +above($breakpoints.lg)
+      margin-left: -6px
+      font-size: 18px;
+      line-height: 18px;
+      margin-top: 28px
+    &.active
+      color: #FFFFFF; 
+      opacity 1

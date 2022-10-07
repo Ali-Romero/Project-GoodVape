@@ -1,0 +1,215 @@
+.assortment-section
+  background-color: #051125;
+  &__inner
+    padding: 42px 0 60px 0
+  &__title
+    margin-bottom: 4px
+  &__title-info
+    margin-bottom: 40px
+  &__masonry
+    margin-bottom: 11px
+  &__masonry-box
+    +above($breakpoints.sm)
+      display: flex
+      justify-content: space-between
+    ul
+      +above($breakpoints.sm)
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+      li
+        position relative
+        background: #091E41;
+        border-radius: 18px;
+        width 100%
+        margin: 0 auto
+        margin-bottom: 8px
+        overflow: hidden
+        +above($breakpoints.sm)
+          margin: 0
+          margin-bottom: 8px
+        +above($breakpoints.lg)
+          margin-bottom: 10px
+          border-radius: 30px;
+          margin-bottom: 15px
+    &:first-child
+      ul
+        &:first-child
+          max-width: 558px;
+          +above($breakpoints.lg)
+            max-width: 871px
+          li
+            &:nth-child(1)
+              padding: 94px 10px 30px 14px
+              max-width: 290px
+              +above($breakpoints.sm)
+                padding: 100px 10px 30px 14px
+                max-width: 276px
+              +above($breakpoints.lg)
+                padding: 172px 60px 77px 27px
+                max-width: 426px
+              .assortment-section__masonry-image
+                top: 20px
+                left: 0
+                +above($breakpoints.lg)
+                  top: 29px
+                img
+                  width: 192px
+                  height: auto
+                  +above($breakpoints.sm)
+                    width: 200px
+                  +above($breakpoints.lg)
+                    width: 382px
+                    height: 117px
+            &:nth-child(2)
+              padding: 72px 10px 18px 14px
+              max-width: 290px
+              +above($breakpoints.sm)
+                padding: 100px 10px 18px 14px
+                max-width: 275px
+              +above($breakpoints.lg)
+                padding: 172px 60px 77px 27px
+                max-width: 429px
+              .assortment-section__masonry-image
+                top: 10px
+                right: 0
+                +above($breakpoints.sm)
+                  top: 20px
+                +above($breakpoints.lg)
+                  top: 29px
+                img
+                  width: 178px
+                  height: auto
+                  +above($breakpoints.sm)
+                    width: 200px
+                  +above($breakpoints.lg)
+                    width: 349px
+                    height: 98px
+            &:nth-child(3)
+              padding: 20px 10px 112px 14px;
+              max-width: 290px
+              +above($breakpoints.sm)
+                padding: 20px 140px 11px 14px;
+                max-width: 100%
+              +above($breakpoints.lg)
+                padding: 25px 211px 25px 27px
+              .assortment-section__masonry-image
+                bottom 0
+                right 92px
+                +above($breakpoints.sm)
+                  right 6px
+                +above($breakpoints.lg)
+                  right 31px
+                img
+                  width: 84px
+                  height: auto
+                  +above($breakpoints.sm)
+                    width: 120px
+                  +above($breakpoints.lg)
+                    width: 140px
+                    height: 168px
+
+        &:last-child
+          li
+            padding: 20px 15px 160px 12px;
+            max-width: 290px;
+            text-align: center
+            +above($breakpoints.sm)
+              padding: 21px 15px 254px 12px;
+              max-width: 195px;
+            +above($breakpoints.lg)
+              padding: 29px 44px 358px 38px
+              max-width: 272px
+            .assortment-section__masonry-image
+              bottom: 0
+              left: 100px;
+              +above($breakpoints.sm)
+                left: 21px
+              +above($breakpoints.lg)
+                left: auto
+              img
+                width: 98px
+                height: auto
+                +above($breakpoints.sm)
+                  width: 152px
+                +above($breakpoints.lg)
+                  width: 212px
+                  height: 328px
+    &:last-child
+      ul
+        max-width: 1160px
+        width 100%
+        +above($breakpoints.sm)
+          display: flex
+          justify-content: space-between
+        li
+          &:first-child
+            max-width: 290px;
+            padding: 20px 14px 20px 86px;
+            +above($breakpoints.sm)
+              max-width: 338px;
+            +above($breakpoints.lg)
+              padding: 63px 43px 63px 162px
+              max-width: 539px
+            .assortment-section__masonry-image
+              left: 14px
+              bottom 0
+              +above($breakpoints.lg)
+                left: 39px
+              img
+                width: 52px
+                height: auto
+                +above($breakpoints.sm)
+                  width: 60px
+                +above($breakpoints.lg)
+                  width: 93px
+                  height: 249px
+
+          &:last-child
+            max-width: 290px;
+            padding: 20px 10px 103px 17px;
+            +above($breakpoints.sm)
+              max-width: 413px;
+              padding: 24px 73px 16px 17px;
+            +above($breakpoints.lg)
+              padding: 45px 127px 44px 27px
+              max-width: 605px
+            .assortment-section__masonry-image
+              right: 0
+              bottom 0
+              img
+                width: 83px
+                height: auto
+                +above($breakpoints.sm)
+                  width: 94px
+                +above($breakpoints.lg)
+                  width: 129px
+                  height: 223px
+
+  &__masonry-title
+    font-family: "Geometria-Bold"
+    font-size: 17px;
+    line-height: 18px;
+    margin-bottom: 12px
+    +above($breakpoints.lg)
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 18px
+  &__masonry-text
+    font-size: 13px;
+    line-height: 17px;
+    +above($breakpoints.lg)
+      font-size: 16px;
+      line-height: 20px;
+  &__masonry-image
+    position: absolute
+  &__masonry-helper-info
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    +above($breakpoints.sm)
+      font-size: 14px;
+      line-height: 19px;
+    +above($breakpoints.lg)
+      font-size: 17px;
+      line-height: 21px;

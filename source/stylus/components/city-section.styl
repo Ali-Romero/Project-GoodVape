@@ -1,8 +1,162 @@
 .city-section
-  height: 995px
   background-color: #051125;
   background-image: url('../images/map.svg')
   background-repeat: no-repeat
-  background-size: 2014px auto
-  background-position: calc(50% - -1056px);
-  background-position-y: 10px
+  background-size: 825px auto;
+  background-position: calc(50% - -201px);
+  background-position-y: 548px;
+  +above($breakpoints.sm)
+    background-size: 1227px auto;
+    background-position: calc(50% - -442px);
+    background-position-y: 210px;
+  +above($breakpoints.lg)
+    background-size: 1291px auto;
+    background-position: calc(50% - -671px);
+    background-position-y: 110px;
+  +above($breakpoints.xxxl)
+    background-size: 1592px auto;
+    background-position: calc(50% - -824px);
+    background-position-y: 75px;
+  +above($breakpoints.xxxxxxl)
+    background-position: calc(50% - -1056px);
+    background-position-y: bottom
+    background-size: 1998px auto
+
+
+  &__inner
+    padding: 50px 0 60px 0
+    +above($breakpoints.lg)
+      padding: 66px 0 99px 0
+  &__title
+    max-width: 560px
+    margin: 0 auto 12px auto
+    text-align: center
+    +above($breakpoints.lg)
+      text-align: left
+      margin: 0 0 17px 0
+      max-width: 929px
+  &__title-info
+    max-width: 712px
+    margin: 0 auto 50px auto
+    text-align: center
+    +above($breakpoints.lg)
+      text-align: left
+      max-width: 865px
+      margin: 0 0 73px 0
+  &__map-title
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 320px
+    margin: 0 auto 26px auto
+    position relative
+    font-family: "Geometria-Bold"
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0 0 26px 0
+    +above($breakpoints.lg)
+      max-width: 481px
+      margin: 0 0 26px 0
+      font-size: 25px;
+      line-height: 31px;
+    &:before
+      content: "“"
+      position: absolute
+      font-size: 81.241px;
+      line-height: 81.241px;
+      right: -130px;
+      top: 12px;
+      +above($breakpoints.lg)
+        font-size: 103.241px;
+        line-height: 103.241px;
+
+
+    span
+      color: #6C4EE7
+  &__map-info
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 532px
+    margin: 0 0 37px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+    +above($breakpoints.lg)
+      font-size: 17px;
+      line-height: 21px;
+  &__founder-name
+    max-width: 278px
+    background-color: #FFFFFF;
+    color: #051125;
+    border-radius: 6px;
+    font-size: 15px
+    line-height: 18px
+    padding: 10px 4px 8px 12px;
+    margin: 0 auto 308px auto
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      margin: 0 0 38px 0
+    +above($breakpoints.lg)
+      max-width: 342px
+      max-width: 342px
+      font-size: 17px
+      line-height: 21px
+      padding: 11px 11px 8px 18px
+      margin: 0 0 69px 0
+    div
+      font-family: "Geometria-Bold"
+      margin-bottom: 2px
+
+
+  &__info
+    ul
+      max-width: 364px
+      margin-bottom: -24px
+      +above($breakpoints.sm)
+        // 
+      +above($breakpoints.lg)
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        max-width: 555px
+      li
+        width 100%
+        margin-bottom: 24px
+        font-size: 16px;
+        line-height: 20px;
+        font-family: "Geometria-Bold"
+        +above($breakpoints.sm)
+          max-width: 160px
+        +above($breakpoints.lg)
+          max-width: 210px
+          margin-bottom: 42px
+          font-size: 22px;
+          line-height: 28px;
+  &__info-container
+    display: flex
+    +above($breakpoints.sm)
+      display: block
+    div
+      &:nth-child(1)
+        margin-right: 10px
+        max-width: 138px
+        width 100%
+        +above($breakpoints.sm)
+          margin-right: 0
+          max-width: 100%
+      &:nth-child(2)
+        color: #6C4EE7
+  &__info-helper
+    font-size: 12px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.22);
+    font-family: "Geometria-Medium"
+    margin-bottom: -8px
+    +above($breakpoints.sm)
+      margin-bottom: 0
+    +above($breakpoints.lg)
+      font-size: 15px;
+      line-height: 19px;

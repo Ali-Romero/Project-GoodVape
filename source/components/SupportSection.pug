@@ -1,0 +1,138 @@
+section.support-section
+  .support-section__wrapper
+    .wrapper
+      .support-section__inner
+        .support-section__container
+          .support-section__container-wrapper
+            h2.support-section__title
+              span Полная поддержка 
+              br
+              span франчайзи на всех этапах. 
+              br
+              |Продуманная программа 
+              br
+              |сопровождения партнеров
+            .support-section__title-info.title-info
+              |Вместе с франшизой передаются весь накопленный опыт и богатая база знаний.
+            .support-section__price
+              div
+                |Стоимость франшизы составляет
+              div
+                |490 000 ₽
+          .support-section__slider
+            .slider-support
+              .slider-support__container.container
+                .slider-support__arrows
+                  .slider-support__arrows-prev.slider-arrow.support-arrow-prev
+                    +icon(name="arrow").b-block
+                  .slider-support__arrows-next.slider-arrow.support-arrow-next
+                    +icon(name="arrow").b-block
+                .slider-support__list.rev_slider(data-slider-support)
+                  .slider-support__list-item.rev_slide
+                    .support-card
+                      span
+                        |Эффективная 
+                        br
+                        |бизнес-модель
+                      span
+                        |Проверена и подтверждена опытом
+                        br
+                        |запуска магазинов с 2015 года
+                  .slider-support__list-item.rev_slide
+                    .support-card
+                      span
+                        |Система развития 
+                        br
+                        |и координации
+                      span
+                        |Подключение к корпоративным соцсетям
+                        br
+                        |и интернет-магазину, передача права пользования товарным знаком и фирменным стилем. Консультации по проведению рекламной кампании: 
+                        |создание аккаунтов, сценариев продвижения и привлечения клиентов.
+                  .slider-support__list-item.rev_slide
+                    .support-card
+                      span
+                        |Поставщики 
+                        br
+                        |и оборудование
+                      span Поиск региональных поставщиков торгового оборудования, помощь в заключении договоров на выгодных условиях.
+                  .slider-support__list-item.rev_slide
+                    .support-card
+                      span
+                        |Автоматизация 
+                        br
+                        |бизнес-процессов
+                      span Подключение к корпоративной CRM-системе Bitrix24, «1С:Предприятие», Video Management Software (VMS) и др
+                  .slider-support__list-item.rev_slide
+                    .support-card
+                      span Поиск и наём персонала
+                      span Первичный рекрутинг сотрудников, предоставление доступа к платформе Motivity для проведения онлайн-обучения нанятого персонала. Организация стажировки с последующей аттестацией сотрудников.
+                  .slider-support__list-item.rev_slide
+                    .support-card
+                      span
+                        |Юридические и 
+                        br
+                        |бухгалтерские вопросы
+                      span Консультации и помощь в оформлении трудовых отношений с сотрудниками, поставщиками и клиентами; ведении документооборота, учёта доходов и расходов, уплата налогов.
+                  .slider-support__list-item.rev_slide
+                    .support-card
+                      span Ассортиментная матрица
+                      span Выбор продукции будет сформирован в соответствии с анализом нишевого рынка в регионе запуска, организовывается первичная поставка товаров.
+                  .slider-support__list-item.rev_slide
+                    .support-card
+                      span
+                        |Инструкции по 
+                        br
+                        |подбору помещения 
+                        br
+                        |и дизайн-оформлению
+                      span
+                        |Анализ выбранных партнёром 
+                        br
+                        |вариантов помещений и рекомендации 
+                        br
+                        |по заключению договора.
+                  .slider-support__list-item.rev_slide
+                    .support-card
+                      span Маркетинговые услуги
+                      span
+                        |Подключение к корпоративным соцсетям 
+                        br
+                        |и интернет-магазину, передача права пользования товарным знаком и фирменным стилем. Консультация и помощь головного офиса в проведении рекламных кампаний: создание аккаунтов, сценариев продвижения и привлечения клиентов.
+          .support-section__progress
+            .js-progress
+
+        .support-section__feedback
+          .feedback
+            form(data-feedback-form).feedback__form
+              .feedback__title
+                |Получите больше информации о поддержке при запуске торговой точки
+              .feedback__container
+                .feedback__input
+                  .input
+                    .input__icon
+                      +icon(name="input-phone").d-block
+                    input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___ ____").input__field
+                .feedback__input
+                  .input
+                    .input__icon
+                      +icon(name="input-email").d-block
+                    input(type="email" name="email" placeholder="bestpartner@goodvape").input__field
+                .feedback__input
+                  .input
+                    .input__icon
+                      +icon(name="input-user").d-block
+                    input(type="text" name="name" placeholder="Юрий Балановский").input__field
+                .feedback__button
+                  .btn
+                    button(type="submit")
+                      span Скачать презентацию
+              input(type="text" name="section-name" value="Открытая" hidden)
+              input(type="text" name="section-name-text" value="Получите больше информации о поддержке при запуске торговой точки" hidden)
+              input(type="text" name="section-btn-text" value="Скачать презентацию" hidden)
+              .feedback__agree
+                .feedback__agree-checkbox
+                  input(name="checkbox" type="checkbox" checked="checked" disabled)
+                .feedback__agree-text
+                  |Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых 
+                  a(href="#" data-remodal-target="privacy").agree-link Политикой конфиденциальности
