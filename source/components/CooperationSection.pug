@@ -1,0 +1,75 @@
+section.cooperation-section
+  .wrapper
+    .cooperation-section__inner
+      h2.cooperation-section__title.title
+        |Начните сотрудничество по модели 
+        span Good Vape 
+        |и уже через 1 месяц откройте собственный магазин 
+        br
+        |по реализации вейп-продукции
+      .cooperation-section__title-info.info-description
+        |Гибкость бизнес-модели позволяет открывать торговую точку как
+        br
+        |в городах с населением 20 тыс. человек, так и в городах-миллионниках.
+      .cooperation-section__cards-title
+        |Приглашаем к сотрудничеству предпринимателей и любителей вейп продукции
+      .cooperation-section__cards
+        .cooperation-section__cards-list(data-slider-cooperation)
+          .cooperation-section__cards-list-item
+            div
+              |Управляющих
+              br
+              |и специалистов в сфере продаж устройств для парения
+            div
+              |стремящиеся создать собственный бизнес при поддержке профессиональной команды, следовать стандартам сети и технологиям работы.
+          .cooperation-section__cards-list-item
+            div
+              |Владельцев заведений
+              br
+              |в смежном направлении
+            div
+              |планирующие изменить формат бизнеса по проверенной франшизе и сделать его основной деятельностью или в качестве параллельного вектора развития.
+          .cooperation-section__cards-list-item
+            div
+              |Начинающих предпринимателей
+            div
+              |бывшие продавцы магазинов по продаже товаров для парения), желающие открыть свой бизнес с помощью практикующих экспертов.
+          .cooperation-section__cards-list-item
+            div
+              |Приверженцев вейп-продукци
+            div
+              |которые хотят реализовать амбиции и построить своё дело со стабильным доходом.
+      .cooperation-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__title
+              |Узнайте подробности по сотрудничеству из онлайн-презентации франшизы Good Vape
+            .feedback__container
+              .feedback__input
+                .input
+                  .input__icon
+                    +icon(name="input-phone").d-block
+                  input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___ ____").input__field
+              .feedback__input
+                .input
+                  .input__icon
+                    +icon(name="input-email").d-block
+                  input(type="email" name="email" placeholder="bestpartner@goodvape").input__field
+              .feedback__input
+                .input
+                  .input__icon
+                    +icon(name="input-user").d-block
+                  input(type="text" name="name" placeholder="Юрий Балановский").input__field
+              .feedback__button
+                .btn
+                  button(type="submit")
+                    span Заказать звонок
+            input(type="text" name="section-name" value="Открытая" hidden)
+            input(type="text" name="section-name-text" value="Узнайте подробности по сотрудничеству из онлайн-презентации франшизы Good Vape" hidden)
+            input(type="text" name="section-btn-text" value="Заказать звонок" hidden)
+            .feedback__agree
+              .feedback__agree-checkbox
+                input(name="checkbox" type="checkbox" checked="checked" disabled)
+              .feedback__agree-text
+                |Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых 
+                a(href="#" data-remodal-target="privacy").agree-link Политикой конфиденциальности

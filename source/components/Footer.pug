@@ -4,32 +4,42 @@ mixin footer(index)
       .footer__row
         .footer__col
           .footer__logo
-            +icon(name="logo-main").d-block
+            +icon(name="logo-main-2").d-block
+          .footer__social
+            ul
+              li
+                a(href="#" target="_blank" aria-label="yandex")
+                  img(src="images/yandex-social.png" loading="lazy" alt="yandex" width="24" height="24").d-block
+              li
+                a(href="#" target="_blank" aria-label="vk")
+                  img(src="images/vk-social.png" loading="lazy" alt="vk" width="24" height="24").d-block
+              li
+                a(href="#" target="_blank" aria-label="tik-tok")
+                  img(src="images/tik-tok-social.png" loading="lazy" alt="tik-tok" width="24" height="24").d-block
+              li
+                a(href="#" target="_blank" aria-label="telegram")
+                  img(src="images/telegram-social.png" loading="lazy" alt="telegram" width="24" height="24").d-block
+
           .footer__legal
             a(href="#" data-remodal-target="privacy").footer__link Политика конфиденциальности
         .footer__col.footer__col--middle
           .footer__text
-            |Marco Bonne' ®,
-            br
-            |2011-
+            |Good Vape ®, 2015-
             span(data-current-year)
-            |г.
+            |  г.
           .footer__text
             div
-              |ООО «ИТТАГРУПП»,
+              |ИП Назарова Наталья Андреевна,
               br
-              |ИНН 3123452348
+              |ИНН 550517917462
           .footer__country
-            .country
-              .country__logo
-                img(src="images/arms.png" loading="lazy" alt="arms" width="38" height="46").d-block
-              .country__label
-                |Российская Федерация, город Москва
+            .country__label
+              |г.Омск, ул. Завертяева, д.7, кв.9 644013
         .footer__col
           .footer__phone
             +connection(index)
           .footer__f5
             a(href="https://xn--5-7sbamtgf4aex7b0b.xn--p1ai/" target="_blank" aria-label="f5").f5
               .f5__logo
-                img(src="images/f5.svg" loading="lazy" alt="f5" width="44" height="42").d-block
+                img(src="images/f5.svg" loading="lazy" alt="f5" width="45" height="42").d-block
               .f5__label Упаковка и продвижение <br /> франшиз: «Франчайзинг5»

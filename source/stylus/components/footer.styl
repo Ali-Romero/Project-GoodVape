@@ -1,13 +1,19 @@
 .footer
-  background-color: #2E2E2E;
-  color: white
-  font-size: 12px
-  line-height: 15px
+  background-color: #ffffff;
+  color: rgba(35, 31, 32, 0.52);
+  font-size: 14px;
+  line-height: 18px;
+  +above($breakpoints.lg)
+    font-size: 18px;
+    line-height: 23px;
   &__row
-    padding: 28px 0 24px 0
+    padding: 40px 0 6px 0
     +above($breakpoints.sm)
       display: flex
       justify-content: space-between
+      padding: 65px 0 24px 0
+    +above($breakpoints.lg)
+      padding: 121px 0 24px 0
   &__col
     margin-bottom: 30px
     +above($breakpoints.sm)
@@ -22,18 +28,28 @@
   &__logo
     margin-bottom: 19px
     svg
-      width: 203px
-      height: 36px
+      width: 108px
+      height: 38px
       margin: 0 auto
       +above($breakpoints.lg)
-        width: 242px
-        height: 42px
-
+        width: 124px
+        height: 43px
+  &__social
+    ul
+      display: flex
+      li
+        margin-right: 24px
+        +above($breakpoints.lg)
+          margin-right: 44px
+        &:last-child
+          margin-right: 0
   &__legal,
   &__social
     display: flex
     justify-content: center
     margin-bottom: 18px
+    +above($breakpoints.lg)
+      margin-bottom: 18px
 
   &__legal
     margin-bottom: 0
@@ -45,29 +61,60 @@
       position: absolute
       width 100%
       height: 1px
-      background-color: white
-      bottom 0
+      background-color: rgba(35, 31, 32, 0.52)
+      bottom 2px
 
   &__text
     margin-bottom: 16px
     text-align: center
     +above($breakpoints.sm)
-      margin-bottom: 26px
       text-align: left
-
+    +above($breakpoints.lg)
+      margin-bottom: 26px
+    br
+      display: block
   &__f5
     &:hover
       .f5__label
         text-decoration: underline
     .f5
       display: flex
-      max-width: 207px
+      max-width: 250px
       margin: 0 auto
+      +above($breakpoints.sm)
+        max-width: 312px
       &__logo
         margin-right: 10px
-
+        img
+          width: 36px
+          height: auto
+          +above($breakpoints.lg)
+            width: 45px
+            height: 42px
   &__phone
     margin-bottom: 30px
+    .connection
+      color: #8C8A8B;
+      flex-direction: row-reverse
+      justify-content: center
+      +above($breakpoints.sm)
+        justify-content: flex-start
+      &__num-link
+        font-family: "Geometria-Medium"
+      &__description
+        font-family: "Geometria-Regular"
+      &__icon
+        border: 1px solid rgba(167, 167, 167, 0.57);
+        margin: 0 13px 0 0
+        width: 36px
+        height: 36px
+        +above($breakpoints.lg)
+          width: 46px
+          height: 46px
+        svg
+          color: #FFDA42
+          width: 19px
+          height: 19px
 
 .country
   display: flex
@@ -78,4 +125,9 @@
     margin-right: 14px
 
   &__label
-    max-width: 195px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      max-width: 186px
+    +above($breakpoints.lg)
+      max-width: 356px

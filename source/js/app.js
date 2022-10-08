@@ -18,6 +18,32 @@ function initSliderMain() {
     ]
   })
 }
+function initSliderCooperation() {
+  $('[data-slider-cooperation]').slick({
+    arrows: false,
+    variableWidth: true,
+    slidesToShow: 2,
+    dots: false,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        adaptiveHeight: true,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          rows: 2,
+        }
+      }
+    ]
+  })
+}
 
 function initDemandToggle() {
   $('.js-arrow-demand').on('click', function () {
@@ -143,6 +169,7 @@ $(document).ready(function() {
   initDemandToggle()
   initFinanceToggle()
   initRangeSlider()
+  initSliderCooperation()
 
   $("input").inputmask()
 });
