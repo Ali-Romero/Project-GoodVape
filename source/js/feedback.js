@@ -40,11 +40,11 @@ function createFormData(data) {
 function initFeedbackForm() {
   const $forms = $('[data-feedback-form]')
 
-  $forms.on('submit', function(event) {
+  $forms.on('submit', function (event) {
     event.preventDefault()
 
     if ($(this).valid()) {
-      var fields = $(this).serializeArray().reduce(function(acc, current) {
+      var fields = $(this).serializeArray().reduce(function (acc, current) {
         return $.extend(acc, { [current.name]: current.value })
       }, {})
 

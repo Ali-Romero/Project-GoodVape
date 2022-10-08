@@ -4,9 +4,9 @@ if(empty($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUE
 }
 // Pre settings
 define("SND_FROM", "info@росфранчайзинг.рф");
-define("SND_TO", "oidareng@yandex.ru"); // allowble comma-sepparated values
-define("SND_NAME", "Franch-name");
-define("NAME_FRANCH", "Название франшизы");
+define("SND_TO", "franch5.leads@gmail.com, g30101962@gmail.com"); // allowble comma-sepparated values
+define("SND_NAME", "Good Vape");
+define("NAME_FRANCH", "Good Vape");
 define("SMTP", false); // see settings in Helper.php before you change this const
 
 $path = dirname(__FILE__);

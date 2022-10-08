@@ -2,25 +2,26 @@ function getTitleTemplate(name, city) {
   var name = name || 'Спасибо'
   var nameTemplate = [
     '<h1 class="thanks-section__title">',
+    '<span>',
     name,
     ',',
+    '</span>',
+    '  благодарим Вас за ',
     '<br>',
-    '<span class="text-white"> благодарим вас за обращение в компанию ---COMPANY--- ©</span>',
+    'обращение в компанию Good Vape©',
     '</h1>',
   ]
   var cityTemplate = [
     '<h1 class="thanks-section__title">',
+    '<span>',
     name,
     ',',
-    '<span class="text-white"> благодарим Вас за заявку </span>',
-    '<br>',
-    '<span class="text-white">на город ',
-    city,
     '</span>',
-    '<span class="text-white"> на франшизу </span>',
+    '  благодарим Вас за заявку ',
     '<br>',
-    '<span class="text-white">в компанию ---COMPANY--- ©</span>',
-    '</div>',
+    'на город ',
+    city,
+    ' на франшизу Good Vape©',
     '</h1>',
   ]
 

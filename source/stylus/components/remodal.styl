@@ -213,9 +213,6 @@
   }
 }
 
-.remodal-wrapper.remodal-is-opened
-  display: flex !important
-
 .remodal-wrapper
   padding: 0
   overflow: hidden
@@ -235,30 +232,36 @@
 .modal-scrollable.remodal-wrapper
   display: flex
   justify-content: center
-  padding: 14px 0
+  padding: 20px 0 0 0
   overflow: auto
   +above($breakpoints.sm)
-    padding: 20px 0
+    padding: 40px 0 0 0
 
 .remodal
   max-height: 100%
-  &--statistics
-    .feedback-mini__title
-      padding: 18px 37px 0;
-      +above($breakpoints.sm)
-        padding: 18px 67px 0;
-
   &__feedback
-    max-width: 300px
+    padding-bottom: 20px
+    width: 300px
     +above($breakpoints.sm)
-      max-width: 445px
+      width: 700px
+    +above($breakpoints.lg)
+      padding-bottom: 40px
+      width: 907px
   &__feedback-close
     cursor: pointer
     position: absolute
-    top: 5px
+    top: 4px
     right: 5px
     padding: 5px
+    z-index 1
+    +above($breakpoints.sm)
+      top: -34px
+      right: 0
     svg
-      fill: $color-red
-      width: 24px
-      height: 24px
+      width: 18px
+      height: 18px
+      stroke: white
+  &__privacy
+    padding-bottom: 20px
+    +above($breakpoints.lg)
+      padding-bottom: 40px

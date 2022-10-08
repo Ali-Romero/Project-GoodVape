@@ -1,39 +1,43 @@
-.remodal.remodal--feedback(data-remodal-id="modal-form-leave" data-remodal-options="modifier: modal-scrollable, hashTracking:false")
+.remodal(data-remodal-id="modal-form-leave" data-remodal-options="modifier: modal-scrollable, hashTracking:false")
   .remodal__feedback
-    .remodal__feedback-close(data-remodal-action="close")
-      +icon(name="icon-close").d-block.remodal__feedback__icon
-    .feedback-mini
-      form(data-feedback-form).feedback-mini__form.feedback-mini__form--leave
-        .feedback-mini__form-container
-          .feedback-mini__title
-            |Уже уходите?
-            span Не упускайте шанс присоединиться к партнёрской сети Marco Bonne`. Получите бесплатную презентацию на почту
-          .feedback-mini__container
-            .feedback-mini__input
-              .input
-                .input__icon
-                  +icon(name="input-phone").d-block
-                input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___ ____").input__field
-            .feedback-mini__input
-              .input
-                .input__icon
-                  +icon(name="input-email").d-block
-                input(type="email" name="email" placeholder="bestpartner@marcobonne.ru").input__field
-            .feedback-mini__input
-              .input
-                .input__icon
-                  +icon(name="input-user").d-block
-                input(type="text" name="name" placeholder="Вадим Лейбин").input__field
-            .feedback-mini__btn
-              .btn
-                button(type="submit")
-                  span Получить презентацию
-            input(type="text" name="section-name" value="Закрытая" hidden)
-            input(type="text" name="section-name-text" value="Уже уходите? Не упускайте шанс присоединиться к партнёрской сети Marco Bonne`. Получите бесплатную презентацию на почту" hidden)
-            input(type="text" name="section-btn-text" value="Получить презентацию" hidden)
-          .feedback-mini__agree
-            .feedback-mini__agree-checkbox
-              input(name="checkbox" type="checkbox" checked="checked" disabled)
-            .feedback-mini__agree-text
+    .remodal__feedback-close(data-remodal-action="close" title="Закрыть")
+      +icon(name="icon-close").svg.remodal__feedback__icon
+    .form-modal.form-modal--leave
+      form.form-modal__feedback(data-feedback-form)
+        .form-modal__info-title
+          |Уже уходите ? 
+          span
+            |Не упустите возможность стать 
+            br
+            |франчайзинговым партнером 
+            br
+            |федеральной сети вейп-шопов Good Vape
+        .form-modal__feedback-container
+          .form-modal__feedback-input
+            .input
+              .input__icon
+                +icon(name="input-phone").d-block
+              input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___ ____").input__field
+          .form-modal__feedback-input
+            .input
+              .input__icon
+                +icon(name="input-user").d-block
+              input(type="text" name="name" placeholder="Юрий Балановский").input__field
+          .form-modal__feedback-input
+            .input
+              .input__icon
+                +icon(name="input-email").d-block
+              input(type="email" name="email" placeholder="bestpartner@goodvape").input__field
+          .form-modal__button
+            .btn
+              button(type="submit")
+                span Присоединиться к франшизе
+          input(type="text" name="section-name" value="Открытая" hidden)
+          input(type="text" name="section-name-text" value="Уже уходите Не упустите возможность стать франчайзинговым партнером федеральной сети вейп-шопов Good Vape? " hidden)
+          input(type="text" name="section-btn-text" value="Присоединиться к франшизе" hidden)
+          .form-modal__agree
+            .form-modal__agree-checkbox
+              input(name="checkbox" type="checkbox" checked="checked" disabled).feedback-agree__checkbox
+            .form-modal__agree-text
               |Я подтверждаю, что ознакомлен и даю согласие на обработку персональных данных на условиях и для целей, определяемых 
               a(href="#" data-remodal-target="privacy").agree-link Политикой конфиденциальности

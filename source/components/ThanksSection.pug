@@ -1,10 +1,42 @@
 section.thanks-section
   .wrapper
-    h1.thanks-section__title(data-thanks-title)
-      span [Имя],
-      | благодарим вас за обращение в компанию Ornamental Premium
-      span.copyright ©
-
     .thanks-section__inner
+      h1.thanks-section__title(data-thanks-title)
+        span [Имя], 
+        |  благодарим Вас за
+        br
+        |обращение в компанию Good Vape©
+
       .thanks-section__description
-        | Для обсуждения сотрудничества мы свяжемся с Вами в ближайшее время.
+        |Для обсуждения сотрудничества мы свяжемся с Вами в ближайшее время.
+      
+      .thanks-section__time
+        .thanks-section__time-title
+          |График работы компании:
+        .thanks-section__time-city
+          |По нашему местному времени в г.Омск:
+        ul
+          li
+            div пн - чт, вс
+            div с 12:00 до 22:00
+          li
+            div пт, сб
+            div с 12:00 до 23:00
+
+      .thanks-section__time-info
+        |*Если Вы оставили заявку в нерабочее время или в выходной/праздничный день — мы перезвоним Вам в ближайший рабочий день.
+
+      .thanks-section__social
+        div Ещё о жизни проекта в соц.сетях:
+        ul
+          li
+            a(href="https://vk.com/good_vapeinfo" target="_blank" aria-label="vk")
+              img(src="images/vk-2.png" loading="lazy" alt="vk" width="24" height="24").d-block
+          li
+            a(href="https://t.me/goodvaperu" target="_blank" aria-label="telegram")
+              img(src="images/telegram-2.png" loading="lazy" alt="telegram" width="24" height="24").d-block
+
+          li
+            a(href="https://vm.tiktok.com/ZSPUJTL3/" target="_blank" aria-label="tik-tok")
+              img(src="images/tik-tok-2.png" loading="lazy" alt="tik-tok" width="24" height="24").d-block
+        

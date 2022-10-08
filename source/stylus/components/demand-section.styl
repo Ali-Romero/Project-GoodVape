@@ -1,8 +1,40 @@
 .demand-section
   background-color: #010B1C
+  position relative
+  z-index 1
+  overflow: unset
+  &:before
+    content: ""
+    position: absolute
+    width 100%
+    height: 128%
+    z-index -1
+    pointer-events: none
+    background-image: url('../images/decor-dots-1.svg'),
+      url('../images/decor-dots-3.svg')
+    background-repeat: no-repeat
+    background-size: 268px 116px, 50px 106px;
+    background-position-y: -34px, 1102px;
+    background-position-x: calc(0% - 154px), calc(100% - 7px);
+    +above($breakpoints.sm)
+      background-size: 268px 116px, 95px 214px;
+      background-position-y: -34px, 650px;
+      background-position-x: calc(0% - 154px), calc(100% - 7px);
+    +above($breakpoints.lg)
+      background-size: 379px 181px, 179px 303px;
+      background-position-y: -36px, 678px;
+      background-position-x: calc(0% - 186px), calc(100% - -22px);
+    +above($breakpoints.xxl)
+      background-position-y: -36px, 747px;
+    +above($breakpoints.xxxxxl)
+      background-size: 572px 264px, 264px 572px;
+      background-position-y: -36px, 596px;
+      background-position-x: calc(0% - 233px), calc(100% - -10px);
   .wrapper
     +above($breakpoints.lg)
       max-width: 1190px
+  &__wrapper
+    overflow: hidden
   &__inner
     padding: 50px 0 40px 0
     +above($breakpoints.lg)
@@ -71,7 +103,7 @@
     +above($breakpoints.sm)
       right 15px
     +above($breakpoints.lg)
-      right 20px
+      right 40px
     +above($breakpoints.xxl)
       right -70px
     .arrow
@@ -142,8 +174,6 @@
         max-width: 389px
         font-size: 16px;
         line-height: 20px;
-
-
 .demand-slide
   filter: drop-shadow(0px 4.49421px 4.49421px rgba(0, 0, 0, 0.25));
   background-color: #091E41;

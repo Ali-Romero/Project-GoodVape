@@ -1,0 +1,211 @@
+.form-modal
+  background-color: #051125;
+  max-width: 300px
+  width: 100%
+  background-repeat: no-repeat
+  +above($breakpoints.sm)
+    max-width: 700px
+    width: 100%
+  +above($breakpoints.lg)
+    max-width: 907px
+    width: 100%
+  &--main
+    +above($breakpoints.sm)
+      background-image: url('../images/form-main-img.png')
+      background-size: 825px auto;
+      background-position: calc(50% - -207px);
+      background-position-y: -191px;
+    +above($breakpoints.lg)
+      background-size: 1055px auto;
+      background-position: calc(50% - -284px);
+      background-position-y: -260px;
+    .form-modal__feedback
+      +above($breakpoints.sm)
+        justify-content: flex-start
+        padding: 110px 0 28px 46px;
+      +above($breakpoints.lg)
+        padding: 160px 0 45px 68px
+    .form-modal__info-title
+      +above($breakpoints.sm)
+        top: 30px
+        left: 46px
+      +above($breakpoints.lg)
+        top: 38px
+        left: 68px
+    .form-modal__feedback-container
+      +above($breakpoints.sm)
+        width 100%
+        max-width: 277px
+      +above($breakpoints.lg)
+        max-width: 393px
+    .form-modal__feedback-input
+      +above($breakpoints.sm)
+        margin-bottom: 10px
+      +above($breakpoints.lg)
+        max-width: 100%
+        height: 57px
+        margin-bottom: 16px
+  &--call
+    +above($breakpoints.sm)
+      background-image: url('../images/form-call-img.png')
+      background-size: 230px auto;
+      background-position: calc(50% - 178px);
+      background-position-y: bottom
+    +above($breakpoints.lg)
+      background-size: 306px auto
+      background-position: calc(50% - 240px);
+      background-position-y: bottom
+  &--leave
+    +above($breakpoints.sm)
+      background-image: url('../images/form-leave-img.png')
+      background-size: 671px auto;
+      background-position: calc(50% - 189px);
+      background-position-y: -80px;
+    +above($breakpoints.lg)
+      background-size: 1016px auto;
+      background-position: calc(50% - 209px);
+      background-position-y: -142px;
+    .form-modal__feedback
+      +above($breakpoints.sm)
+        padding: 46px 44px 27px 36px;
+      +above($breakpoints.lg)
+        padding: 69px 86px 86px 70px
+    .form-modal__info-title
+      +above($breakpoints.sm)
+        top: 34px
+        left: 34px
+      +above($breakpoints.lg)
+        top: 46px
+        left: 70px
+      span
+        font-size: 14px;
+        line-height: 17px;
+        +above($breakpoints.lg)
+          margin-top: 9px
+          font-size: 17px;
+          line-height: 21px;
+  &__feedback
+    padding: 24px 14px 14px 14px
+    border-radius: 10px
+    position: relative
+    +above($breakpoints.sm)
+      padding: 43px
+      display: flex
+      justify-content: flex-end
+    +above($breakpoints.lg)
+      width: 100%
+      padding: 73px 89px 85px 54px
+  
+  &__feedback-container
+    max-width: 290px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      margin: 0
+      max-width: 255px
+    +above($breakpoints.lg)
+      max-width: 310px
+
+  &__info-title
+    font-size: 17px
+    line-height: 18px
+    margin: 0 auto
+    text-align: center
+    margin-bottom: 16px
+    font-family: "Geometria-Bold"
+    text-transform: uppercase
+    color: white
+    +above($breakpoints.sm)
+      margin-bottom: 0
+      font-size: 20px
+      line-height: 24px
+      position: absolute
+      left: 54px;
+      top: 43px;
+      text-align: left;
+    +above($breakpoints.lg)
+      top: 73px;
+      font-size: 30px;
+      line-height: 45px
+    span
+      display:  block
+      font-size: 14px;
+      line-height: 16px
+      font-family: "Geometria-Regular"
+      text-transform: initial
+      margin-top: 4px
+      +above($breakpoints.sm)
+        font-size: 16px;
+        line-height: 20px
+        margin-top: 6px
+      +above($breakpoints.lg)
+        margin-top: 9px
+        font-size: 20px;
+        line-height: 25px;
+
+  &__feedback-input
+    display: flex
+    justify-content: center
+    max-width: 260px
+    width 100%
+    margin: 0 auto
+    margin-bottom: 16px
+    height: 52px
+    +above($breakpoints.sm)
+      max-width: 306px
+      height: 50px
+      margin: 0 auto
+      margin-bottom: 18px
+    +above($breakpoints.lg)
+      height: 64px
+    svg
+      fill: none
+    .input
+      border: 0
+      background: rgba(255, 255, 255, 0.08);
+      padding: 0 10px
+      +above($breakpoints.lg)
+        padding: 0 15px
+      &__field
+        color: white
+
+  &__button
+    display: flex
+    justify-content: center
+    max-width: 260px
+    margin: 0 auto
+    margin-bottom: 20px
+    height: 52px
+    +above($breakpoints.sm)
+      max-width: 100%
+      margin-bottom: 18px
+    +above($breakpoints.lg)
+      margin-bottom: 28px
+      height: 70px
+    .btn
+      font-size: 14px
+      line-height: 19px
+      +above($breakpoints.lg)
+        font-size: 17px
+        line-height: 21px
+  &__agree
+    display: flex
+    margin-left: -8px
+  &__agree-text
+    max-width: 400px
+    text-align: center
+    font-size: 10px
+    line-height: 11px
+    color: rgba(255, 255, 255, 0.56);
+    font-family: "Geometria-Light"
+    +above($breakpoints.sm)
+      font-size: 10px
+      line-height: 12px
+      text-align: left
+      margin-right: -48px
+    +above($breakpoints.lg)
+      font-size: 12px;
+      line-height: 16px
+      margin-right: -38px
+    .agree-link
+      color: rgba(255, 255, 255, 0.56);
+      text-decoration: underline

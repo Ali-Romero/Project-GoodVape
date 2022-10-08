@@ -6,6 +6,7 @@
   border-radius: 10px;
   padding: 0 16px 0 14px
   height: 100%
+  width 100%
   +above($breakpoints.sm)
     padding-left: 7px
     padding: 0 5px
@@ -32,7 +33,7 @@
     transition: all 0.3s
     height: 100%
     background: none
-    font-family: "Geometria-Light"
+    font-family: "Geometria-Regular"
     +above($breakpoints.sm)
       font-size: 12px
       line-height: 16px
@@ -49,12 +50,15 @@
     &::placeholder
       color: #B7B7B7
       font-style: italic
+      font-family: "Geometria-Light"
     &:-ms-input-placeholder
       color: #B7B7B7
       font-style: italic
+      font-family: "Geometria-Light"
     &::-ms-input-placeholder
       color: #B7B7B7
       font-style: italic
+      font-family: "Geometria-Light"
     &.error
       color: $color-error
       font-style: italic
