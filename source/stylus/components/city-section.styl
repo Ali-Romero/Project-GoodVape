@@ -2,9 +2,9 @@
   background-color: #051125;
   background-image: url('../images/map.svg')
   background-repeat: no-repeat
-  background-size: 825px auto;
-  background-position: calc(50% - -201px);
-  background-position-y: 548px;
+  background-size: 1092px auto;
+  background-position: calc(50% - -208px);
+  background-position-y: 542px;
   +above($breakpoints.sm)
     background-size: 1264px auto;
     background-position: calc(50% - -442px);
@@ -20,7 +20,7 @@
   +above($breakpoints.xxxxxxl)
     background-position: calc(50% - -1056px);
     background-position-y: bottom
-    background-size: 1998px auto
+    background-size: 1986px auto
   &__inner
     padding: 50px 0 60px 0
     +above($breakpoints.lg)
@@ -64,10 +64,15 @@
     &:before
       content: "“"
       position: absolute
-      font-size: 81.241px;
-      line-height: 81.241px;
-      right: -130px;
-      top: 12px;
+      font-size: 59.241px;
+      line-height: 64.241px;
+      right: -25px;
+      top: 14px;
+      +above($breakpoints.sm)
+        font-size: 81.241px;
+        line-height: 81.241px;
+        right: -130px;
+        top: 12px;
       +above($breakpoints.lg)
         font-size: 103.241px;
         line-height: 103.241px;
